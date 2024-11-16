@@ -1,0 +1,246 @@
+/*****************/ 
+/* STYLE GENERAL */
+/*****************/
+
+html, body {
+    height: 100%;
+
+    margin: 0;
+  }
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 1280px;
+    margin: auto;
+    height: 100%;
+
+    font-family: sans-serif;
+}
+
+main {
+    flex: 1;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    margin: 1em 0;
+  
+    font-size: 1.5em;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+}
+
+/**********/
+/* ENTETE */
+/**********/ 
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 150px;
+
+    background-image: url("../images/bandeau.jpg");
+
+    color: #FFFFFF;
+    font-size: 5em;
+    font-weight: bold;
+}
+
+/*******/
+/* NAV */
+/*******/ 
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    border-bottom: 3px solid #264054;
+    padding: 2em 0;
+    margin: 0;   
+}
+
+li {   
+    list-style-type: none;
+}
+
+li a {
+    padding: 0.75em 2em;
+
+    background-color: #264054;
+    border-radius: 0.5em;
+
+    color: #FFFFFF;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.9;
+}
+
+/*************/
+/* RECHERCHE */
+/*************/
+
+.recherche {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+
+    margin-top: 1em;
+}
+
+.recherche label {
+    margin:0;
+}
+
+.recherche input[type="submit"] {
+    margin: 0;
+}
+
+/*********/
+/* TABLE */
+/*********/ 
+
+caption {
+    margin: 1em 0;
+  
+    font-size: 1.5em;
+    font-weight: bold;
+    font-style: italic;
+}
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+th, td {
+    padding: 0.5em;
+
+    border: 1px solid #264054;
+}
+
+th {   
+    background-color:#264054;
+
+    color: #FFFFFF;
+}
+
+tr:nth-child(odd) {
+    background-color: #edf6f9;
+}
+
+tr:hover {
+    background-color: #e9ecef;
+}
+
+.derniereColonne {
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa-pen-to-square {
+    color: #57cc99;
+}
+
+.fa-trash {
+    color: #ef233c;
+}
+
+/**************/
+/* FORMULAIRE */
+/**************/
+
+form {
+    padding: 1em 0em;
+    
+    background-color: #edf6f9;
+}
+
+fieldset {
+    display: flex;
+    justify-content: space-around;
+    
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.champDroit {
+    display: flex;
+    flex-direction: column;
+
+    width: 40%;
+}
+
+.champGauche {
+    display: flex;
+    flex-direction: column;
+
+    width: 40%;
+}
+
+label {
+    margin-bottom: 0.5em;
+
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    border: none;
+    padding: 0.5em;
+}
+
+textarea {
+    flex: 1;
+    resize: none;
+}
+
+input[type="submit"] {
+    display: flex;
+    margin: auto;
+
+    border-radius: 0.5em;
+    padding: 0.75em 2em;
+    margin-top: 1em;
+
+    background-color: #264054;
+    
+    color:#FFFFFF;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    opacity: 0.9;
+}
+
+/**********/
+/* FOOTER */
+/**********/
+
+footer {
+    padding: 1em 0;
+    margin-top: 1em;
+    
+    background-color: #264054;
+
+    color: #FFFFFF;
+    text-align: center;
+}
